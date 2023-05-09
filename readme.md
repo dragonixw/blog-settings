@@ -1,5 +1,8 @@
 因为不是经常用...把我之前做过的东西都放进来
 
+首先今天学会了markdown原来是一种formatting的语言
+refer to markdown-cheat-sheet.md
+
 # 需要的程序：
 
 1. Node.js
