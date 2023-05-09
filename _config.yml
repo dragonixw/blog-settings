@@ -3,24 +3,28 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
-subtitle: ''
-description: ''
-keywords:
-author: John Doe
-language: en
-timezone: ''
+title: Dragonix的小博客
+subtitle: 我的人生见闻
+description: 欢迎来到我的小博客！这里你将看到一切关于我的事迹~ ACGN、音乐、日常、吉他、健身计划……等等等等。甚至这个博客也是我兴起想要搭建的~
+keywords: 动漫 
+
+#这里keywords要怎么写？ 比如用逗号（，）区分啊，还是''啊之类的
+
+author: Dragonix #凤之龙
+language: zh
+timezone: Asia/Singapore
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: http://example.com
-permalink: :year/:month/:day/:title/
+url: http://dragonixw.github.io
+permalink: :year/:month/:title/ # :year/:month/:day/:title/
 permalink_defaults:
 pretty_urls:
-  trailing_index: true # Set to false to remove trailing 'index.html' from permalinks
-  trailing_html: true # Set to false to remove trailing '.html' from permalinks
+  # true or false
+  trailing_index: false # Set to false to remove trailing 'index.html' from permalinks
+  trailing_html: false # Set to false to remove trailing '.html' from permalinks
 
-# Directory
+# Directory 这个暂时先不要管……完全不懂……
 source_dir: source
 public_dir: public
 tag_dir: tags
@@ -31,7 +35,11 @@ i18n_dir: :lang
 skip_render:
 
 # Writing
-new_post_name: :title.md # File name of new posts
+new_post_name: :year:i_month:title.md # Default file name of new posts
+# :title 标题
+# :year:month:day 有前导零
+# :year:i_month:i_day 无前导零
+
 default_layout: post
 titlecase: false # Transform title into titlecase
 external_link:
@@ -97,9 +105,11 @@ ignore:
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: landscape
+theme: kratos-rebirth
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
-  type: ''
+  type: git
+  repo: https://github.com/dragonixw/dragonixw.github.io.git
+  branch: gh-pages
