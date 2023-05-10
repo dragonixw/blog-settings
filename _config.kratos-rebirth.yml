@@ -1,11 +1,26 @@
 # Global 全局配置
 site_analytics: ''
+# 页脚的站点统计代码
+# 还没试过有什么用。。。
+
 hoster: <a href="https://github.io" target="_blank">Github Pages</a>
+# 页脚的 'Github Pages' 的链接
+
 site_logo: ''
+
 snow: false
+# true/false 站点下雪特效开关，控制是否在载入下雪相关的代码。
+
 click_animate_js: 'candy'
+# filename/false 点击动画的 js 文件
+# 在 themes/kratos-rebirth/src/js 文件夹里面
+
 enable_dark: true
-highlight_theme: night-eighties # 代码高亮主题（light | night | night-eighties | night-blue | night-bright）
+# ture/false 站点是否启用暗色模式适配
+
+highlight_theme: night-eighties 
+# 代码高亮主题，控制代码高亮时候使用的配色（light | night | night-eighties | night-blue | night-bright）
+
 check_update: true
 # canonical: true
 
@@ -171,15 +186,15 @@ aplayer:
   enabled: false
   playlist: 
   meting:
-    server: netease
-    type: playlist
-    id: 3204190542
-  order: random
+    server: #netease, tencent, kugou, xiami, baidu
+    type: #song, playlist, album, search, artist
+    id: #3204190542
+  order: #list/random
 
 # Widgets 侧边栏小挂件
 sidebar: right
 widgets:
-- about
+- about # 是不是哪个 about.webp?
 - splitter
 - toc
 - category
